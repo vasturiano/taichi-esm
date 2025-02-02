@@ -7,20 +7,11 @@
   "exports": {
     "default": "./dist/taichi.mjs"
   },
-  "sideEffects": false,
   "repository": {
     "type": "git",
     "url": "git+https://github.com/vasturiano/taichi-esm.git"
   },
   "homepage": "https://github.com/vasturiano/taichi-esm",
-  "author": {
-    "name": "Vasco Asturiano",
-    "url": "https://github.com/vasturiano"
-  },
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/vasturiano/taichi-esm/issues"
-  },
   "scripts": {
     "build": "rimraf dist && rollup -c",
     "prepare": "npm run build"
