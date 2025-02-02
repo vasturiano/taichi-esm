@@ -1,0 +1,43 @@
+{
+  "name": "taichi-esm",
+  "version": "0.0.1",
+  "description": "ES module export of Taichi.js",
+  "type": "module",
+  "module": "dist/taichi.mjs",
+  "exports": {
+    "default": "./dist/taichi.mjs"
+  },
+  "sideEffects": false,
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vasturiano/taichi-esm.git"
+  },
+  "homepage": "https://github.com/vasturiano/taichi-esm",
+  "author": {
+    "name": "Vasco Asturiano",
+    "url": "https://github.com/vasturiano"
+  },
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/vasturiano/taichi-esm/issues"
+  },
+  "scripts": {
+    "build": "rimraf dist && rollup -c",
+    "prepare": "npm run build"
+  },
+  "files": [
+    "dist/**/*"
+  ],
+  "dependencies": {
+    "taichi.js": "*"
+  },
+  "devDependencies": {
+    "@rollup/plugin-typescript": "^12.1.2",
+    "rimraf": "^6.0.1",
+    "rollup": "^4.34.0",
+    "typescript": "^5.7.3"
+  },
+  "engines": {
+    "node": ">=12"
+  }
+}
