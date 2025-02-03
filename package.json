@@ -1,6 +1,6 @@
 {
   "name": "taichi-esm",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "description": "ES module export of Taichi.js",
   "type": "module",
   "module": "dist/taichi.mjs",
